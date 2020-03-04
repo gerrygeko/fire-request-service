@@ -8,10 +8,10 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Launcher {
+public class JavaNetLauncher {
 
     private final static HttpClient client = HttpClient.newBuilder().build();
-    public static final int NUMBER_OF_REQUESTS_TO_FIRE = 5000;
+    private static final int NUMBER_OF_REQUESTS_TO_FIRE = 5000;
     private static AtomicInteger completedRequets = new AtomicInteger(0);
 
     public static void main(String[] args) {
